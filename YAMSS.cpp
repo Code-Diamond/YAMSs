@@ -16,7 +16,7 @@ int main()
 {
 	srand(time(NULL));
 	system("CLS");
-	int a, b, c;
+	int a, b, c, d;
 	bool switcher = false;
 
 	//Set color to green
@@ -30,30 +30,55 @@ int main()
 		{
 			case 0:
 				b = rand() % 10;
-				cout << numbers[b] << "   ";
+				d = rand() % 5;
+				cout << numbers[b];
+				for(int i = 0; i < d; i++)
+				{
+					cout << " ";
+				}
 				break;
 			case 1:
 				b = rand() % 26;
-				cout << lowerCase[b] << " ";
+				d = rand() % 5;
+				cout << lowerCase[b];
+				for(int i = 0; i < d; i++)
+				{
+					cout << " ";
+				}
 				break;
 			case 2:
 				b = rand() % 26;
-				cout << upperCase[b] << "  ";
+				d = rand() % 3;
+				cout << upperCase[b];
+				for(int i = 0; i < d; i++)
+				{
+					cout << "  ";
+				}
 				break;
 			case 3:
 				b = rand() % 12;
-				cout << specialChar[b] << "";
+				d = rand() % 3;
+				cout << specialChar[b];
+				for(int i = 0; i < d; i++)
+				{
+					cout << "  ";
+				}
 				break;
 			case 4:
 				b = rand() % 15;
-				cout << evenMoreSpecial[b] << "     ";
+				d = rand() % 1;
+				cout << evenMoreSpecial[b];
+				for(int i = 0; i < d; i++)
+				{
+					cout << "   ";
+				}
 				break;
 			case 5:
 				b = rand() % 30;
 				if(b==0)
 				{
 					c = rand() % 3;
-					cout << whatCipherSaw[c] << " ";
+					cout << whatCipherSaw[c];
 				}
 				break;
 			case 6:
